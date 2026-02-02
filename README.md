@@ -36,13 +36,14 @@ from arbiter_predictor import WinPredictor
 
 predictor = WinPredictor()
 result = predictor.analyze(
-    army_a="WARScribe notation...",
-    army_b="WARScribe notation...",
-    simulations=10000
+    army_a="WARScribe Battle notation Turns 1, 2, 3",
+    army_b="WARScribe Battle notation Turn 1, 2",
+    simulations=10000,
+    depth=2,
 )
 
-print(f"Army A Win Probability: {result.win_prob_a:.2%}")
-print(f"Army B Win Probability: {result.win_prob_b:.2%}")
+# Returns weighted win probabilities for each future turn
+print(result)
 ```
 
 ## Architecture
@@ -62,7 +63,7 @@ print(f"Army B Win Probability: {result.win_prob_b:.2%}")
 
 ## Roadmap Note
 
-The domain boundaries between this library and the future "Primordia AI" project are evolving. Arbiter-Predictor focuses on **statistical inference**, while Primordia will handle **strategic AI** (similar to Stockfish for chess).
+The domain boundaries between this library and the future "Primordia AI" project are evolving. Arbiter-Predictor focuses on **statistical prediction inference**, while Primordia will handle **strategic AI** (similar to Stockfish for chess). Arbiter-Predictor will be used to power the Vindicta Platform's prediction systems and will provide a + or - from 0 for weighted win probabilities. 
 
 ## Related Repositories
 
