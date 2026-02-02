@@ -1,0 +1,25 @@
+site_name: Arbiter Predictor
+site_description: Statistical predictions and Elo modeling
+site_url: https://vindicta-platform.github.io/Arbiter-Predictor/
+
+repo_name: vindicta-platform/Arbiter-Predictor
+repo_url: https://github.com/vindicta-platform/Arbiter-Predictor
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: cyan
+      accent: lime
+  font:
+    text: Outfit
+    code: JetBrains Mono
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Models: models.md
+  - Contributing: contributing.md
+
+plugins:
+  - search
