@@ -15,8 +15,18 @@ Arbiter-Predictor calculates win probabilities by running Monte Carlo simulation
 
 ## Installation
 
+Install from source using uv:
+
 ```bash
-pip install arbiter-predictor
+uv pip install git+https://github.com/vindicta-platform/Arbiter-Predictor.git
+```
+
+Or clone and install locally:
+
+```bash
+git clone https://github.com/vindicta-platform/Arbiter-Predictor.git
+cd Arbiter-Predictor
+uv pip install -e .
 ```
 
 ## Quick Start
